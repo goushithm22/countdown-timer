@@ -1,0 +1,118 @@
+/* styles.css */
+body {
+  font-family: 'Poppins', sans-serif; /* Add a modern font */
+  text-align: center;
+  background: linear-gradient(135deg, #667eea, #764ba2); /* Gradient background */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 700px;
+  margin: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Smooth shadow */
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ffeb3b; /* Bright and engaging title color */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.input-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="datetime-local"] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e64a19; /* Hover effect */
+}
+
+#timers-container {
+  margin-top: 30px;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* Contrast background */
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.timer p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffeb3b; /* Bright color for timer text */
+  margin: 0 10px;
+}
+
+.timer span {
+  font-size: 0.9rem;
+  color: #f1f1f1; /* Subtle secondary text */
+}
+
+.remove-btn {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e91e63;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #c2185b; /* Hover effect */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
