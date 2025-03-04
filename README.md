@@ -28,5 +28,5 @@ cd countdown-timer
 │── buzzer.wav     # Alert sound when timer ends  
 │── README.md      # Project documentation  
 
-LIVE DEMO AVAILABLE AT: 
+LIVE DEMO AVAILABLE AT: https://goushithm22.github.io/countdown-timer/
 
