@@ -6,18 +6,29 @@
   <title>Countdown Timer</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
 </head>
 <body>
+  <canvas id="background"></canvas>
+
+  <button id="theme-toggle">Toggle Theme</button> <!-- Theme Button -->
+
+  <h2 id="quote">"Waiting for this countdown like it’s free pizza delivery. 🍕⏳"</h2> <!-- Quote Header -->
+
   <div class="container">
     <h1>Countdown Timer</h1>
     <div class="input-container">
-      <label for="date">Target Date and Time:</label>
-      <input type="datetime-local" id="date" required>
+      <input type="text" id="timer-name" placeholder="Enter Timer Name">
+      <input type="date" id="date">
+      <input type="number" id="hours" placeholder="Hours" min="0" max="23">
+      <input type="number" id="minutes" placeholder="Minutes" min="0" max="59">
+      <input type="number" id="seconds" placeholder="Seconds" min="0" max="59">
       <button id="add-timer">Add Timer</button>
-    </div>
+    </div>    
     <div id="timers-container"></div>
   </div>
+
+  <audio id="alarm" src="buzzer.wav"></audio> <!-- Alarm Sound -->
+
   <script src="script.js"></script>
 </body>
 </html>
